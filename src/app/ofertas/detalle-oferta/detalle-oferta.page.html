@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defualHref="/oferta"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="centrar">DETALLES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="back2">
+      <ion-img [src]="oferta.imagePro"></ion-img>
+  </div>
+
+  <div class="space1 back1">
+    <div class="space2 tunning1">
+          {{oferta.final}}
+    </div>
+
+    <div class="space2 tunning1">
+          {{oferta.producto}}
+    </div>
+  </div>
+
+  <div>
+    <h1 class="fecha">Fecha</h1>
+  </div>
+
+  <div class="space1 por">
+    <div class="space2 tunning2">
+          <h2 class="ficha">Dia</h2>
+          <div class="tunning3">
+            {{oferta.dia}}
+          </div>
+    </div>
+
+    <div class="space2 tunning2">
+          <h2 class="ficha tunning4">A las</h2>
+    </div>
+
+    <div class="space2 tunning2">
+          <h2 class="ficha">Hora</h2>
+          <div class="tunning3">
+            {{oferta.hora}}
+          </div>
+    </div>
+
+  </div>
+
+  <div class="space1 back3">
+
+    <div class="space2 tunning2">
+      <div class="space1 tunning2">
+          {{oferta.rol1}}
+      </div>
+      <div class="space1 tunning2">
+          <ion-avatar name="person-circle-outline">
+          <ion-img [src]="oferta.imageUrl1">
+          </ion-img>
+        </ion-avatar>
+      </div>
+      <div class="space1 tunning2">
+          {{oferta.name1}}
+      </div>
+    </div>
+
+    <div class="space2 tunning2">
+      <div class="space1 tunning2">
+          {{oferta.rol2}}
+      </div>
+      <div class="space1 tunning2">
+          <ion-avatar name="person-circle-outline">
+          <ion-img [src]="oferta.imageUrl2">
+          </ion-img>
+          </ion-avatar>
+      </div>
+      <div class="space1 tunning2">
+          {{oferta.name2}}
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>REGISTRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="container">
+    <ion-card-content>
+      <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-item lines="none">
+            <ion-label color="primary" style="font-family: 'Arial';font-size:large;">Tipo de usuario<ion-text color="danger">*</ion-text></ion-label>
+          </ion-item>
+          <ion-radio-group required type="checkbox" formControlName="tipoUser">
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <label class="sizeImg">
+                    <ion-label style="font-family: 'Arial';font-size:large;">Vendedor</ion-label>
+                    <img src="https://static.dw.com/image/55545493_403.jpg"/>
+                    <ion-radio slot="start" color="success" value="vendedor"></ion-radio>
+                  </label>
+                </ion-col>
+                <ion-col>
+                  <label class="sizeImg">
+                    <ion-label style="font-family: 'Arial';font-size:large;">Comprador</ion-label>
+                    <img src="https://www.larazon.es/resizer/ipcBsl7KSGUT9tGmwrvkPpzOLP8=/1800x1200/smart/filters:format(webp):quality(65)/cloudfront-eu-central-1.images.arcpublishing.com/larazon/DQGFPDWKCJGLHEVA2Z5J6NGNZY.jpg"/>
+                    <ion-radio slot="start" color="success" value="comprador"></ion-radio>
+                  </label>
+                </ion-col>
+                <ion-col>
+                  <label class="sizeImg">
+                    <ion-label style="font-family: 'Arial';font-size:large;">Transportador</ion-label>
+                    <img src="https://www.utadeo.edu.co/sites/tadeo/files/node/wysiwyg/whatsapp_image_2020-11-18_at_6.37.30_pm.jpeg"/>
+                    <ion-radio slot="start" color="success" value="transportador"></ion-radio>
+                  </label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-radio-group>
+          <ion-item>
+            <ion-label position="floating" color="primary" style="font-family: 'Arial';font-size:large;">Nombre<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required formControlName="nombre" style="font-family: 'Arial';font-size:large;"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating" color="primary" style="font-family: 'Arial';font-size:large;">Correo<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="email" formControlName="email" style="font-family: 'Arial';font-size:large;"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label  position="floating" color="primary" style="font-family: 'Arial';font-size:large;">Contraseña<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input  #passwordEyeRegister  [type]="passwordTypeInput1"  formControlName="password" style="font-family: 'Arial';font-size:large;"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label  position="floating" color="primary" style="font-family: 'Arial';font-size:large;">Confirmación de contraseña<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input  #passwordEyeRegister  [type]="passwordTypeInput2"  formControlName="confirmacionPassword" clearOnEdit="false" style="font-family: 'Arial';font-size:large;"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox slot="start" (ionChange)="togglePasswordMode()"></ion-checkbox>
+            <ion-label color="secondary" style="font-family: 'Arial';font-size:medium;">Mostrar contraseña</ion-label>
+          </ion-item>
+        </ion-list>
+        <div style="padding-top:50px; text-align: center;">
+          <ion-button color="secondary" (click)="guardar()" style="font-family: 'Arial'; font-size:medium; width: 300px; height:50px;">REGISTRARME</ion-button>
+        </div>
+     </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

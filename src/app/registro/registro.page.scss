@@ -1,0 +1,29 @@
+.sizeImg img {
+  height: 70px;
+  width: 100px;
+  border: 5px solid transparent;
+}
+
+ion-col {
+  text-align: center;
+}
+
+ion-content.ion-padding{
+  --background: url("../../assets/img/registro.jpg") 0 0/100% 100% no-repeat;
+}
+
+ion-title{
+  text-align:center;
+}
+
+ion-label{
+  --font-family: 'Arial';
+  --font-size:medium;
+  --color:#FF900D;
+}
+
+.container{
+  position: relative;
+  top: 20px;
+  height: 750px;
+}

@@ -1,0 +1,106 @@
+.fecha{
+    text-align: center;
+    font-weight: bold;
+    color: #6e1e1e;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+
+.fecha2{
+    text-align: center;
+    font-weight: bold;
+    color: #6e1e1e;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 0%;
+    background-color: rgba(114, 32, 32, 0.198);
+}
+
+.centrar{
+    text-align: center;
+    margin-right: 48px;
+}
+
+.ficha{
+    text-align: center;
+    font-weight: bold;
+    color: #6e1e1e;
+    font-size: 10px;
+    padding: 0%;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.back1{
+    background-color: rgba(114, 32, 32, 0.198);
+    height: 100px;
+}
+
+.back2{
+    background-color: rgba(114, 32, 32, 0.198);
+    margin-top: 20px;
+}
+
+.back3{
+    background-color: rgba(114, 32, 32, 0.198);
+    height: 120px;
+}
+
+
+.mitad{
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.bordes1{
+    margin-left: 100px;
+}
+
+.bordes2{
+    margin-right: 100px;
+}
+
+.space1{
+    display: flex;
+    flex-direction: row;
+}
+
+.space2{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.tunning1{
+    margin: auto;
+    background-color: white;
+    border-radius: 50px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    padding: auto;
+}
+
+.tunning2{
+    margin: auto;
+}
+
+.tunning3{
+    margin: auto;
+    background-color: rgba(110, 30, 30, 0.575);
+    border-radius: 50px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.tunning4{
+    margin: 0%;
+    padding-top: 25px;
+}
+

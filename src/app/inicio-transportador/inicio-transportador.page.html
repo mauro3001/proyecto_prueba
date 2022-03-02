@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button>
+      <ion-icon (click)="openMenu()" class="fotoper5" name="person-circle-outline"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title class="espacio5">Solicitudes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="center" [routerLink]="['/ofertas']" slot="fixed">
+    <ion-fab-button class="boton-up1">
+      <ion-icon class="boton-up" name="arrow-up-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+  <ion-list>
+  <ion-card class="final" *ngFor="let oferta of ofertas" [routerLink]="['/ofertas', oferta.id]">
+    <ion-item class="margin1">
+      <ion-avatar name="person-circle-outline" class="imgfot1 arr">
+        <ion-img [src]="oferta.imageUrl1">
+        </ion-img>
+      </ion-avatar>
+      <ion-avatar name="person-circle-outline" class="imgfot baj" slot="end">
+        <ion-img [src]="oferta.imageUrl2">
+        </ion-img>
+      </ion-avatar>
+      <ion-label>
+      <div class="space1">
+        {{oferta.rol1}}
+        <br>
+        {{oferta.name1}}
+      </div>
+      <br>
+      <div class="space2">
+        {{oferta.rol2}}
+        <br>
+        {{oferta.name2}}
+      </div>
+      <br>
+      </ion-label>
+      </ion-item>
+      <ion-item>
+      <ion-label>
+      <div class="space3">
+        <div class="space4">
+        {{oferta.from}}
+        <br>
+        {{oferta.desde}}
+        </div>
+        <div class="space4">
+        {{oferta.to}}
+        <br>
+        {{oferta.hasta}}
+        </div>
+      </div>
+      </ion-label>
+      </ion-item>
+  <ion-card-content class="mejorada">
+    <div>
+        {{oferta.final}} {{oferta.producto}}
+      </div>
+  </ion-card-content>
+</ion-card>
+
+</ion-list>
+
+</ion-content>
